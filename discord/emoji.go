@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/automuteus/utils/pkg/game"
+	"github.com/ZenJakey/utils/pkg/game"
 
 	"github.com/bwmarrin/discordgo"
 )
@@ -50,8 +50,8 @@ func (e *Emoji) DownloadAndBase64Encode() string {
 
 func emptyStatusEmojis() AlivenessEmojis {
 	topMap := make(AlivenessEmojis)
-	topMap[true] = make([]Emoji, 12) // 12 colors for alive/dead
-	topMap[false] = make([]Emoji, 12)
+	topMap[true] = make([]Emoji, 20) // 12 colors for alive/dead + 8 for Town of Us
+	topMap[false] = make([]Emoji, 20)
 	return topMap
 }
 
@@ -134,6 +134,38 @@ var GlobalAlivenessEmojis = AlivenessEmojis{
 			Name: "aulime",
 			ID:   "762392088121442334",
 		},
+		game.Watermelon: {
+			Name: "auwatermelon",
+			ID:   "846734024780546059",
+		},
+		game.Chocolate: {
+			Name: "auchocolate",
+			ID:   "846734025258565692",
+		},
+		game.Skyblue: {
+			Name: "auskyblue",
+			ID:   "846734024730345473",
+		},
+		game.Beige: {
+			Name: "aubeige",
+			ID:   "846734025070739456",
+		},
+		game.Hotpink: {
+			Name: "auhotpink",
+			ID:   "846734025140862986",
+		},
+		game.Turquoise: {
+			Name: "auturquoise",
+			ID:   "846734025073623050",
+		},
+		game.Lilac: {
+			Name: "aulilac",
+			ID:   "846734025116483614",
+		},
+		game.Rainbow: {
+			Name: "aurainbow",
+			ID:   "846734025237987368",
+		},
 	},
 	false: []Emoji{
 		game.Red: {
@@ -183,6 +215,38 @@ var GlobalAlivenessEmojis = AlivenessEmojis{
 		game.Lime: {
 			Name: "aulimedead",
 			ID:   "762397192366325793",
+		},
+		game.Watermelon: {
+			Name: "auwatermelondead",
+			ID:   "846734099733413888",
+		},
+		game.Chocolate: {
+			Name: "auchocolatedead",
+			ID:   "846734099677970432",
+		},
+		game.Skyblue: {
+			Name: "auskybluedead",
+			ID:   "846734099875495956",
+		},
+		game.Beige: {
+			Name: "aubeigedead",
+			ID:   "846734099552796722",
+		},
+		game.Hotpink: {
+			Name: "auhotpinkdead",
+			ID:   "846734099565641749",
+		},
+		game.Turquoise: {
+			Name: "auturquoisedead",
+			ID:   "846734099501809684",
+		},
+		game.Lilac: {
+			Name: "aulilacdead",
+			ID:   "846734099687145482",
+		},
+		game.Rainbow: {
+			Name: "aurainbowdead",
+			ID:   "846734099745734706",
 		},
 	},
 }
