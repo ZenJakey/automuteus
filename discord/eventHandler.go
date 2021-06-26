@@ -5,15 +5,16 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"log"
+	"strconv"
+	"strings"
+	"time"
+
 	"github.com/automuteus/utils/pkg/game"
 	"github.com/automuteus/utils/pkg/task"
 	"github.com/denverquane/amongusdiscord/amongus"
 	"github.com/denverquane/amongusdiscord/metrics"
 	"github.com/go-redis/redis/v8"
-	"log"
-	"strconv"
-	"strings"
-	"time"
 
 	"github.com/denverquane/amongusdiscord/storage"
 )
@@ -111,7 +112,7 @@ func (bot *Bot) SubscribeToGameByConnectCode(guildID, connectCode string, endGam
 						log.Println(err)
 						break
 					}
-					if player.Color > 17 || player.Color < 0 {
+					if player.Color > 26 || player.Color < 0 {
 						break
 					}
 

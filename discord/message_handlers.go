@@ -578,7 +578,7 @@ func (bot *Bot) handleGameStartMessage(s *discordgo.Session, m *discordgo.Messag
 
 	// log.Println("Added self game state message")
 	// +18 emojis, 1 for X
-	metrics.RecordDiscordRequests(bot.RedisInterface.client, metrics.ReactionAdd, 19)
+	metrics.RecordDiscordRequests(bot.RedisInterface.client, metrics.ReactionAdd, 28)
 
 	go dgs.AddAllReactions(bot.PrimarySession, bot.StatusEmojis[true])
 }

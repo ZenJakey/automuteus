@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/automuteus/utils/pkg/game"
+	"github.com/zenjakey/utils/pkg/game"
 
 	"github.com/bwmarrin/discordgo"
 )
@@ -50,8 +50,8 @@ func (e *Emoji) DownloadAndBase64Encode() string {
 
 func emptyStatusEmojis() AlivenessEmojis {
 	topMap := make(AlivenessEmojis)
-	topMap[true] = make([]Emoji, 18) // 18 colors for alive/dead
-	topMap[false] = make([]Emoji, 18)
+	topMap[true] = make([]Emoji, 27) // 18 colors for alive/dead
+	topMap[false] = make([]Emoji, 27)
 	return topMap
 }
 
@@ -158,6 +158,42 @@ var GlobalAlivenessEmojis = AlivenessEmojis{
 			Name: "aucoral",
 			ID:   "855108016466821151",
 		},
+		game.Watermelon: {
+			Name: "auwatermelon",
+			ID:   "855108016466821151",
+		},
+		game.Chocolate: {
+			Name: "auchocolate",
+			ID:   "855108016466821151",
+		},
+		game.Skyblue: {
+			Name: "auskyblue",
+			ID:   "855108016466821151",
+		},
+		game.Beige: {
+			Name: "aubeige",
+			ID:   "855108016466821151",
+		},
+		game.Hotpink: {
+			Name: "auhotpink",
+			ID:   "855108016466821151",
+		},
+		game.Turquoise: {
+			Name: "auturquoise",
+			ID:   "855108016466821151",
+		},
+		game.Lilac: {
+			Name: "aulilac",
+			ID:   "855108016466821151",
+		},
+		game.Rainbow: {
+			Name: "aurainbow",
+			ID:   "855108016466821151",
+		},
+		game.Azure: {
+			Name: "auazure",
+			ID:   "855108016466821151",
+		},
 	},
 	false: []Emoji{
 		game.Red: {
@@ -231,6 +267,42 @@ var GlobalAlivenessEmojis = AlivenessEmojis{
 		game.Coral: {
 			Name: "aucoraldead",
 			ID:   "855108017096097802",
+		},
+		game.Watermelon: {
+			Name: "auwatermelondead",
+			ID:   "855108016466821151",
+		},
+		game.Chocolate: {
+			Name: "auchocolatedead",
+			ID:   "855108016466821151",
+		},
+		game.Skyblue: {
+			Name: "auskybluedead",
+			ID:   "855108016466821151",
+		},
+		game.Beige: {
+			Name: "aubeigedead",
+			ID:   "855108016466821151",
+		},
+		game.Hotpink: {
+			Name: "auhotpinkdead",
+			ID:   "855108016466821151",
+		},
+		game.Turquoise: {
+			Name: "auturquoisedead",
+			ID:   "855108016466821151",
+		},
+		game.Lilac: {
+			Name: "aulilacdead",
+			ID:   "855108016466821151",
+		},
+		game.Rainbow: {
+			Name: "aurainbowdead",
+			ID:   "855108016466821151",
+		},
+		game.Azure: {
+			Name: "auazuredead",
+			ID:   "855108016466821151",
 		},
 	},
 }
